@@ -1,0 +1,180 @@
+.sprite {
+    background-image: url(../img/sprite-mini.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.add-img {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bag {
+    width: 36px;
+    height: 34px;
+    background-position: -47px -5px;
+}
+.bag-before:before{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 34px;
+    background: url(../img/sprite-mini.png) -47px -5px no-repeat;
+    top: 0;
+    left:20px;
+    /*transform: translateY(-50%) translateX(-50%);*/
+}
+.close {
+    width: 25px;
+    height: 25px;
+    background-position: -93px -5px;
+}
+
+.cloud {
+    width: 32px;
+    height: 25px;
+    background-position: -128px -5px;
+}
+
+.fb {
+    width: 47px;
+    height: 47px;
+    background-position: -93px -40px;
+}
+
+.fb:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -150px -40px;
+}
+
+.file {
+    width: 26px;
+    height: 32px;
+    background-position: -5px -97px;
+}
+.file-before:before{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 32px;
+    background: url(../img/sprite-mini.png) -5px -97px no-repeat;
+    top: 0;
+    left:30px;
+}
+.git {
+    width: 47px;
+    height: 47px;
+    background-position: -41px -97px;
+}
+
+.git:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -98px -97px;
+}
+
+.hat {
+    width: 41px;
+    height: 23px;
+    background-position: -155px -97px;
+}
+.hat-before:before{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 41px;
+    height: 23px;
+    background: url(../img/sprite-mini.png) -155px -97px no-repeat;
+    top: 0;
+    left:20px;
+}
+
+.lock-off {
+    width: 22px;
+    height: 32px;
+    background-position: -207px -5px;
+    display: block;
+    /*Выравнивание по вертикали*/
+    position: absolute;
+}
+.lock-on {
+    width: 22px;
+    height: 32px;
+    background-position: -155px -130px;
+    display: block;
+}
+.lock-off:hover {
+    width: 22px;
+    height: 32px;
+    background-position: -155px -130px;
+    display: block;
+}
+
+.mail {
+    width: 21px;
+    height: 16px;
+    background-position: -170px -5px;
+}
+.mail-before:before{
+    content:"";
+    width: 21px;
+    height: 16px;
+    background: url(../img/sprite-mini.png) -170px -5px no-repeat;
+    float: left;
+    margin: 10px 0 0 0;
+}
+.phone {
+    width: 19px;
+    height: 20px;
+    background-position: -5px -47px;
+}
+.phone-before:before{
+    content:"";
+    width: 19px;
+    height: 20px;
+    background: url(../img/sprite-mini.png) -5px -47px no-repeat;
+    float: left;
+    margin: 6px 0 0 0;
+}
+.skype {
+    width: 20px;
+    height: 20px;
+    background-position: -207px -47px;
+}
+.skype-before:before{
+    content:"";
+    width: 20px;
+    height: 20px;
+    background: url(../img/sprite-mini.png) -207px -47px no-repeat;
+    float: left;
+    margin: 6px 0 0 0;
+}
+.tw {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -172px;
+}
+
+.tw:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -172px;
+}
+
+.vk {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -172px;
+}
+
+.vk:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -176px -172px;
+}
