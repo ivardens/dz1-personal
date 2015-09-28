@@ -87,7 +87,6 @@ text-indent: -99999px;
 	min-width: auto;
 	padding-left: 0;
 	font-size:0;
-	top:25px;
 	margin-top:35px;
 }
 .social-item{
@@ -263,7 +262,12 @@ text-indent: -99999px;
 	padding-top: 22px;
 	margin-bottom:35px;
 }
+.article-works h1{
+	margin-top: 0;
+	padding-top: 22px;
+}
 .article-title{
+	position: relative;
 	font-size: 27px;
 	color:#3ba8c0;
 	padding-left: 22px;
@@ -271,7 +275,7 @@ text-indent: -99999px;
 .article-title:after{
 	content: "";
     display: table;
-    width:55%;
+    width:60%;
     margin-left: -22px;
     margin-top: 20px;
     border-bottom: 2px solid #3ba8c0;
@@ -282,7 +286,7 @@ text-indent: -99999px;
 .article-title:hover:after{
     content: "";
     display: table;
-    width:80%;
+    width:650px;
     margin-left: -22px;
     margin-top: 20px;
     border-bottom: 2px solid #3ba8c0;
@@ -309,12 +313,14 @@ text-indent: -99999px;
 	float:right;
 	min-width: 200px;
 	padding: 0;
+	margin-top: 0;
 	margin-left: 20px;
 	margin-right: 20px;
 }
 .personal-li,
 .article-text-li{
 	list-style: none;
+	margin-bottom: 10px;
 }
 .article-text-li{
 	padding: 0 0 0 76px;
@@ -358,7 +364,8 @@ text-indent: -99999px;
 		background: linear-gradient(to bottom,  #3ba8c0 0%,#3ba8c0 50%,#2e8ca2 50%,#2e8ca2 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 );
 		;
-	font-size: 14px;
+	font-size: 12px;
+	line-height: 12px;
 	color:#fff;
 }
 .line-title{
@@ -376,7 +383,9 @@ text-indent: -99999px;
 /* Works Block */
 .article-works{
 	padding:0;
+	margin-bottom: 25px;
 	width: 650px;
+	background-color: #eff3f7;
 }
 .sample-project{
 	display: inline-block;
@@ -389,6 +398,11 @@ text-indent: -99999px;
 	margin-bottom: 30px;
 	vertical-align: top;
 	line-height: 15px;
+}
+.sample-link{
+	color:#3ba8c0;
+	text-decoration:none;
+	font-style: italic;
 }
 
 .add-sample-project{
@@ -416,18 +430,26 @@ text-indent: -99999px;
 }
 .site-img{
 	position: relative;
-	z-index: 1;
 	display: inline-block;
 	border: 2px solid #3ba8c0;
 	border-radius: 5px;
 	width:180px;
 }
-.site-img:hover{
+/*.sample-project:hover:before{
+	content: " Home ";
+	top:0;
+	z-index: 10;
+	display: table;
 	position: relative;
-	z-index: 2;
+	color: white;
 	background-color: red;
 	width:180px;
-}
+	height: 180px;
+}*/
+/*.site-img:hover{
+    background: url('http://dummyimage.com/100x100/eb00eb/fff');
+}*/
+
 .sample-site-img{
 	position: relative;
   background-image: url(../img/sample-site.png);

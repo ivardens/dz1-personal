@@ -40,18 +40,6 @@
     background-position: -128px -5px;
 }
 
-.fb {
-    width: 47px;
-    height: 47px;
-    background-position: -93px -40px;
-}
-
-.fb:hover {
-    width: 47px;
-    height: 47px;
-    background-position: -150px -40px;
-}
-
 .file {
     width: 26px;
     height: 32px;
@@ -66,17 +54,6 @@
     background: url(../img/sprite-mini.png) -5px -97px no-repeat;
     top: 0;
     left:30px;
-}
-.git {
-    width: 47px;
-    height: 47px;
-    background-position: -41px -97px;
-}
-
-.git:hover {
-    width: 47px;
-    height: 47px;
-    background-position: -98px -97px;
 }
 
 .hat {
@@ -155,6 +132,21 @@
     float: left;
     margin: 6px 0 0 0;
 }
+
+/* Social icons */
+
+.vk {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -172px;
+}
+
+.vk:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -176px -172px;
+}
+
 .tw {
     width: 47px;
     height: 47px;
@@ -167,14 +159,26 @@
     background-position: -62px -172px;
 }
 
-.vk {
+.fb {
     width: 47px;
     height: 47px;
-    background-position: -119px -172px;
+    background-position: -93px -40px;
 }
 
-.vk:hover {
+.fb:hover {
     width: 47px;
     height: 47px;
-    background-position: -176px -172px;
+    background-position: -150px -40px;
+}
+
+.git {
+    width: 47px;
+    height: 47px;
+    background-position: -41px -97px;
+}
+
+.git:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -98px -97px;
 }
