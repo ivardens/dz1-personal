@@ -15,7 +15,9 @@ html, body {
 .site-footer, .page-wrap:after {
   height: 78px;
 }
-.site-footer {}
+.site-footer {
+
+}
 
 /* Sticky Footer */
 
@@ -61,13 +63,12 @@ body {
   display: block;
   background-color: #eff3f7;
   margin-bottom: 40px;
-  height: 116px;
+  min-width: 960px;
 }
 .page-wrapper {
   display: block;
   position: relative;
   width: 960px;
-  margin: 0 auto;
   margin: 0 auto;
 }
 .page-big-wrapper {
@@ -75,7 +76,6 @@ body {
   position: relative;
   background-color: #eff3f7;
   max-width: 1200px;
-  min-width: 960px;
   height: 116px;
   margin: 0 auto;
 }
@@ -500,8 +500,10 @@ body {
 /* Footer */
 .site-footer {
   display: block;
+  margin-left:auto;
+  margin-right:auto;
+  min-width:960px;
   background-color: #eff3f7;
-  height: 78px;
 }
 .lock {
   position: relative;
