@@ -58,6 +58,7 @@ body {
 */
 
 .page-header {
+  display: block;
   background-color: #eff3f7;
   margin-bottom: 40px;
   height: 116px;
@@ -75,7 +76,7 @@ body {
   background-color: #eff3f7;
   max-width: 1200px;
   min-width: 960px;
-  /*height: 116px;*/
+  height: 116px;
   margin: 0 auto;
 }
 .left-block {
