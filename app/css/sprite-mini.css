@@ -24,7 +24,8 @@
     width: 36px;
     height: 34px;
     background: url(../img/sprite-mini.png) -47px -5px no-repeat;
-    top: 0;
+    top: 50%;
+    margin-top: -36px;
     left:20px;
     /*transform: translateY(-50%) translateX(-50%);*/
 }
@@ -52,7 +53,8 @@
     width: 26px;
     height: 32px;
     background: url(../img/sprite-mini.png) -5px -97px no-repeat;
-    top: 0;
+    top: 50%;
+    margin-top: -32px;
     left:30px;
 }
 
@@ -68,7 +70,8 @@
     width: 41px;
     height: 23px;
     background: url(../img/sprite-mini.png) -155px -97px no-repeat;
-    top: 0;
+    top: 50%;
+    margin-top: -23px;
     left:20px;
 }
 
