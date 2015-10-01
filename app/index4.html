@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
   <link rel="stylesheet" href="css/sprite-mini.css">
   <link rel="stylesheet" href="fonts/fira/fira.css">
-  <link rel="stylesheet" href="css/main3.css">
+  <link rel="stylesheet" href="css/main.css">
   <script src="js/modernizr-custom.min.js"></script>
     <title>Обо мне</title>
 </head>
@@ -37,18 +37,17 @@
 <![endif]-->
 <body>
 
-<div class="wrapper">
-<!-- input code after -->
+  <!-- Page wrapper -->
+  <div class="page-wrap">
 
-    <!-- Start of Header block -->
-    <header class="header  line-bottom">
-      <div class="big-wrapper clearfix">
+    <header class="page-header  line-bottom">
+      <div class="page-big-wrapper clearfix">
 
         <!-- Logo block -->
-        <figure class="logotip">
+        <figure class="main-logo">
             <a href="#" title="LoftSchool От мыслителя к создателю"><img src="img/logo_page.png" alt="LoftSchool От мыслителя к создателю"></a>
-            <figcaption>От мыслителя к создателю</figcaption>
-            <span class="logotip-text">LoftSchool</span>
+            <!-- <figcaption>От мыслителя к создателю</figcaption> -->
+            <span class="logo-text">LoftSchool</span>
         </figure>
             <!-- Social icons block -->
             <ul class="social">
@@ -68,8 +67,6 @@
 
       </div>
     </header>
-    <!-- End of Header block -->
-
     <div class="page-wrapper clearfix">
       <div class="left-block">
         <!-- navigation block -->
@@ -199,19 +196,21 @@
       </div>
     </div>
 
+  </div>
+  <!-- Page wrapper -->
 
-
-<!-- input code before -->
-<div class="push"></div>
-</div>
-
-    <!-- Footer block -->
-    <div class="footer line-top">
-      <div class="page-wrapper site-footer clearfix">
-          <a href="#" class="lock sprite lock-off" title="Login">Login</a>
-          <p class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
-      </div>
+  <!-- Footer -->
+  <footer class="site-footer line-top">
+    <div class="page-wrapper clearfix">
+        <a href="#" class="lock sprite lock-off" title="Login">Login</a>
+        <p class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
     </div>
+  </footer>
+  <!-- Footer -->
 
+  <!-- JS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/bower/jquery/dist/jquery.min.js"><\/script>')</script>
+  <script src="js/common.js"></script>
 </body>
 </html>

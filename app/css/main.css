@@ -1,29 +1,21 @@
-/* Sticky Footer */
-
+/* Footer Stick to the Bottom */
 html, body {
   height: 100%;
+  margin: 0;
 }
-.page-wrap {
+.wrapper {
   min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -78px;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  margin: 0 auto -78px; /* the bottom margin is the negative value of the footer's height */
 }
-.page-wrap:after {
-  content: "";
-  display: block;
+.footer, .push {
+  height: 78px; /* .push must be the same height as .footer */
 }
-.site-footer, .page-wrap:after {
-  height: 78px;
-}
-.site-footer {
+/* Footer Stick to the Bottom */
 
-}
-
-/* Sticky Footer */
 
 
 /* Clear-Fix */
-
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
@@ -31,121 +23,106 @@ html, body {
 .clearfix:after {
   clear: both;
 }
-
 /* Clear-Fix */
+/* text-indent: -99999px; */
+.text-off{
+  display: inline-block;
+  text-indent: -99999px;
+}
+/* text-indent: -99999px; */
+
 
 
 /* Main style code */
-
 body {
   background-color: white;
   background-image: url('../img/bg.png');
   font-family: fira_sansbook, sans-serif;
-  font-size: 17px;
-  line-height: 24px;
   color: #4a545d;
 }
 
-/*	Block position on the fix 1200px	*/
 
 
-/*
-.header
-	.page-big-wrapper [min-width:970px / max-width:1200px /height:116px]
-.page-wrapper [960px]
-	.left-block [250px]
-		space [60px]
-	.right-block [650px]
-.page-footer [height:78px]
-*/
-
-.page-header {
+/* styles for browsers larger than 960px; */
+/*@media only screen and (min-width:960px){*/
+body{
+  font-size: 17px;
+  line-height: 24px;
+}
+.header{
   display: block;
   background-color: #eff3f7;
   margin-bottom: 40px;
+  width: 100%;
   min-width: 960px;
 }
-.page-wrapper {
+.footer{
   display: block;
-  position: relative;
-  width: 960px;
-  margin: 0 auto;
-}
-.page-big-wrapper {
-  display: block;
-  position: relative;
   background-color: #eff3f7;
+  height: 78px;
+  min-width: 960px;
+}
+.header-height{
+  height: 100%;
+  min-height: 116px;
+}
+.footer-height{}
+
+.wrap-big{
+  display: block;
+  position: relative;
+  width: 100%;
   max-width: 1200px;
-  height: 116px;
+  min-width: 959px;
   margin: 0 auto;
 }
-.left-block {
-  float: left;
-  font-size: 0;
-  margin-left: 0;
-  margin-right: auto;
+.wrap{
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  min-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+.left-block{
+  float:left;
   width: 250px;
+  height: 100%;
 }
-.right-block {
-  float: right;
-  font-size: 0;
-  margin-right: 0;
-  margin-left: auto;
-  width: 650px;
+.right-block{
+  float:right;
+  width:650px;
+  height: 100%;
 }
 
-/*	Block position on the fix 1200px	*/
-
-
-/* Logo */
-
-.main-logo {
+.logo{
   float: left;
-  margin-left: 0;
-  font-size: 0;
-  text-shadow: none;
-  color: transparent;
   margin-top: 39px;
+  margin-left: 0px;
 }
-.logo-text {
-  display: inline-block;
-  text-indent: -99999px;
-}
-
-/* Logo */
-
-
-/* Social icons */
-
 .social {
   float: right;
-  min-width: auto;
-  padding-left: 0;
-  font-size: 0;
   margin-top: 35px;
+  margin-right: 0px;
+  padding-left: 0;
 }
 .social-item {
   display: inline-block;
   list-style: none;
-  margin-left: 24px;
-  text-indent: 999999px;
-  text-shadow: none;
-  color: transparent;
+  margin-left: 19px;
 }
 .social-item:first-child {
-  margin-left: 0;
+  margin-left: 0px;
 }
-
 /* Social icons */
 
-
 /* Navigation */
-
 .nav {
   display: block;
   width: 250px;
   background-color: #eff3f7;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
   font-size: 0;
   margin-bottom: 20px;
@@ -153,26 +130,28 @@ body {
 .nav-ul {
   list-style: none;
   padding: 0;
-  font-style: 0;
 }
 .nav-a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   font-size: 21px;
   line-height: 72px;
   padding-left: 28px;
   color: #4a545d;
 }
-.nav-li--active, .nav-li--active a {
+.nav-a--active,
+.nav-li--active {
   background-color: #3ba8c0;
   color: #fff;
 }
-.nav-li:hover, .nav-li:hover a {
+.nav-a:hover,
+.nav-li:hover {
   display: block;
   background-color: #51daf8;
   color: #ffffff;
 }
-.nav-li.nav-li--active:hover, .nav-li.nav-li--active:hover a {
+.nav-a--active:hover,
+.nav-li--active:hover {
   background-color: #3ba8c0;
   color: #fff;
 }
@@ -185,7 +164,11 @@ body {
   height: 2px;
   background-color: #3ba8c0;
 }
-.nav-li:first-child:before, .nav-li--active:before, .nav-li--active + li:before, .nav-li:hover:before, .nav-li:hover + li:before {
+.nav-li:first-child:before,
+.nav-li--active:before,
+.nav-li--active + li:before,
+.nav-li:hover:before,
+.nav-li:hover + li:before {
   content: "";
   display: block;
   margin-left: auto;
@@ -194,9 +177,60 @@ body {
   height: 2px;
   background-color: transparent;
 }
-
 /* Navigation */
 
+/* Contacts */
+
+.contacts {
+  display: block;
+  width: 250px;
+  background-color: #eff3f7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.contacts-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contacts-li {
+  height: 40px;
+  width: 100%;
+}
+.contacts-li, .contacts-a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 40px;
+  padding-left: 15px;
+  color: white;
+  font-style: normal;
+}
+.contacts-li.title {
+  background-color: #3ba8c0;
+  font-size: 21px;
+  line-height: 40px;
+  padding-left: 28px;
+}
+.contacts-li.mail {
+  background-color: #41b9d4;
+}
+.contacts-li.phone {
+  background-color: #48cbe8;
+}
+.contacts-li.skype {
+  background-color: #51daf8;
+}
+.contacts-li a {
+  color: white;
+  font-size: 15px;
+  line-height: 40px;
+}
+.contacts-li:hover a {
+  color: white;
+  text-decoration: underline;
+}
+/* Contacts */
 
 /* Contacts */
 
@@ -255,11 +289,10 @@ body {
 /* Content */
 
 .article {
-  min-width: 350px;
   width: 650px;
   background-color: #eff3f7;
   border-radius: 5px;
-  padding-bottom: 32px;
+  padding-bottom: 15px;
   margin-bottom: 25px;
   margin-left: 0;
   margin-right: auto;
@@ -306,8 +339,7 @@ body {
   height: 142px;
   border-radius: 50%;
   border: 4px solid #3ba8c0;
-  margin: 0;
-  margin-top: 10px;
+  margin: 10px 0 0;
   padding: 0;
   margin-left: 55px;
   overflow: hidden;
@@ -315,9 +347,7 @@ body {
 .personal-photo-img {
   width: 100%;
 }
-.personal-photo-text {
-  font-size: 0;
-}
+
 .personal {
   float: right;
   width: 400px;
@@ -335,11 +365,6 @@ body {
   position: relative;
 }
 
-/*.personal-question,
-.personal-answer{
-	width: 380px;
-}*/
-
 .personal-question {
   font-size: 17px;
   font-weight: bold;
@@ -349,14 +374,14 @@ body {
 .pesonal-answer {
   font-size: 17px;
   line-height: 17px;
-  margin-left: 20px;
+  margin-left: 10px;
   vertical-align: top;
 }
 .personal-skills {
   display: inline-block;
   width: 200px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 8px;
 }
 .personal-skills-item {
   display: inline-block;
@@ -364,7 +389,7 @@ body {
   padding: 4px 12px;
   margin: 5px 8px 5px 0;
   border-radius: 2px;
-  background-color: background: #3ba8c0;
+  background-color: #3ba8c0;
   background: -moz-linear-gradient(top, #3ba8c0 0%, #3ba8c0 50%, #2e8ca2 50%, #2e8ca2 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3ba8c0), color-stop(50%, #3ba8c0), color-stop(50%, #2e8ca2), color-stop(100%, #2e8ca2));
   background: -webkit-linear-gradient(top, #3ba8c0 0%, #3ba8c0 50%, #2e8ca2 50%, #2e8ca2 100%);
@@ -388,12 +413,26 @@ body {
 .article-text-li {
   padding-bottom: 25px;
 }
-
 /* Content */
 
+/* Footer content block  start */
+.lock {
+  position: absolute;
+  float: left;
+  top: 50%;
+  margin-top:-16px;
+  margin-left: 31px;
+}
+.copyright {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 13px;
+}
+/* Footer content block  end */
 
-/* Works Block */
 
+/* Works block srart */
 .article-works {
   padding: 0;
   margin-bottom: 25px;
@@ -460,93 +499,55 @@ body {
   width: 184px;
   height: 125px;
 }
-.form-contact{
-	font-size: 17px;
-}
-.form-username, .form-email, .form-capture, .form-code {
-  display: inline-block;
-  width: 180px;
-  height: 40px;
-  vertical-align: top;
-  margin: 10px 0;
-}
-.form-username, .form-capture"{
- float:left;
-}
-.form-email, .form-code {
-  float: right;
-}
-.form-text {
-  display: inline-block;
-  width: 400px;
-  height: 180px;
-}
-.form-button-send {
-  float: left;
-	font-size: 17px;
-}
-.form-button-clear {
-  float: right;
-	font-size: 17px;
-}
-.form-wrapper {
-  display: block;
-  width: 400px;
-  margin: auto;
-}
+/* Works block end */
 
-/* Works Block */
 
-/* Footer */
-.site-footer {
-  display: block;
-  margin-left:auto;
-  margin-right:auto;
-  min-width:960px;
-  background-color: #eff3f7;
-}
-.lock {
-  position: relative;
-  font-size: 0;
-  text-shadow: none;
-  color: transparent;
-  float: left;
-  top: 10px;
-}
-.copyright {
-  padding-top: 20px;
-  text-align: center;
-  font-size: 13px;
-  line-height: 13px;
-}
 
-/* Footer */
+/*}*/
+/* styles for browsers larger than 960px; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Gradient line */
-.line-bottom:after, .line-top:before {
+.line-bottom:after,
+.line-top:before {
   content: " ";
   display: block;
+  position: relative;
   background: -moz-linear-gradient(left, #edf8fc 0%, #1c667a 50%, #1c667a 50%, #edf8fc 100%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #edf8fc), color-stop(50%, #1c667a), color-stop(50%, #1c667a), color-stop(100%, #ffffff));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(left, #edf8fc 0%, #1c667a 50%, #1c667a 50%, #edf8fc 100%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(left, #edf8fc 0%, #1c667a 50%, #1c667a 50%, #edf8fc 100%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(left, #edf8fc 0%, #1c667a 50%, #1c667a 50%, #edf8fc 100%);
   /* IE10+ */
-
   background: linear-gradient(to right, #edf8fc 0%, #1c667a 50%, #1c667a 50%, #edf8fc 100%);
   /* W3C */
-
   height: 3px;
   margin: 0;
   padding: 0;
+}
+.line-bottom:after{
+  bottom:-100%;
 }
 
 /* Gradient line */

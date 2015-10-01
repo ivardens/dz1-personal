@@ -1,19 +1,24 @@
-/* Footer Stick to the Bottom */
+/* Sticky Footer */
+
 html, body {
   height: 100%;
-  margin:0;
 }
-.wrapper {
+.page-wrap {
   min-height: 100%;
-  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-  height: 100%;
-  margin: 0 auto -78px; /* the bottom margin is the negative value of the footer's height */
+  /* equal to footer height */
+  margin-bottom: -78px;
 }
-.footer, .push {
-  height: 78px; /* .push must be the same height as .footer */
-  background-color: red;
+.page-wrap:after {
+  content: "";
+  display: block;
 }
-/* Footer Stick to the Bottom */
+.site-footer, .page-wrap:after {
+  height: 78px;
+}
+
+
+/* Sticky Footer */
+
 
 /* Clear-Fix */
 
@@ -56,19 +61,23 @@ body {
   display: block;
   background-color: #eff3f7;
   margin-bottom: 40px;
-  height: 116px;
+  min-width: 960px;
 }
 .page-wrapper {
   display: block;
-  width: 960px;
+  position: relative;
+  width:100%;
+  min-width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 .page-big-wrapper {
   display: block;
   position: relative;
   background-color: #eff3f7;
-  max-width: 1200px;
+  width:100%;
   min-width: 960px;
+  max-width: 1200px;
   height: 116px;
   margin: 0 auto;
 }
@@ -136,7 +145,7 @@ body {
 
 .nav {
   display: block;
-  width: 250px;
+  width: 100%;
   background-color: #eff3f7;
   border-radius: 5px;
   overflow: hidden;
@@ -328,11 +337,6 @@ body {
   position: relative;
 }
 
-/*.personal-question,
-.personal-answer{
-	width: 380px;
-}*/
-
 .personal-question {
   font-size: 17px;
   font-weight: bold;
@@ -493,8 +497,9 @@ body {
 /* Footer */
 .site-footer {
   display: block;
-  width: 960px;
-  height: 78px;
+  margin-left:auto;
+  margin-right:auto;
+  min-width:960px;
   background-color: #eff3f7;
 }
 .lock {
