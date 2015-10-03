@@ -583,6 +583,19 @@ padding: 12px 5px;
   width:138px;
   height: 33px;
   color: #fff;
+  background-color: #849db5;
+  border-radius: 5px;
+  border: 0 solid transparent;
+  box-shadow:  inset 0px -2px 0 0 #687b8f;
+  -webkit-box-shadow: inset 0px -2px 0 0 #687b8f;
+     -moz-box-shadow: inset 0px -2px 0 0 #687b8f;
+          box-shadow: inset 0px -2px 0 0 #687b8f;
+}
+.form-button-send:hover,
+.form-button-clear:hover{
+  width:138px;
+  height: 33px;
+  color: #fff;
   background-color: #48cbe8;
   border-radius: 5px;
   border: 0 solid transparent;
@@ -591,6 +604,7 @@ padding: 12px 5px;
      -moz-box-shadow: inset 0px -2px 0 0 #3ba8c0;
           box-shadow: inset 0px -2px 0 0 #3ba8c0;
 }
+
 .form-button-clear{
   float: right;
   /*margin-left: 119px;
