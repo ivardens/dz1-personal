@@ -104,20 +104,43 @@
       <!-- Right block start -->
       <div class="right-block clearfix">
         <!-- Main information block -->
-        <article class="article">
-            <h1 class="article-title">У вас интересный проект? Напишите мне. </h1>
-            <div class="form-wrapper clearfix">
-            <form class="form-contact">
-                <input type="text" class="form-username" placeholder="Username">
-                <input type="email" class="form-email" placeholder="Email">
-                <input type="password" class="form-capture" placeholder="Capture">
-                <input type="password" class="form-code" placeholder="Code">
-                <textarea class="form-text" placeholder="Textareas work too"></textarea>
-            </form>
-            <button type="submit" class="form-button-send">Отправить</button>
-            <button type="submit" class="form-button-clear">Очистить</button>
+        <article class="article-form">
+
+          <div class="form-title-wrap">
+            <h1 class="article-form-title">У вас интересный проект? Напишите мне. </h1>
+          </div>
+
+            <div class="form-wrap">
+            <form class="form-contact clearfix" action="" method="post" name="form-contact">
+              <label class="label-wrap">
+                <span class="input-title">Имя</span><br>
+                <input type="text" class="form-username" placeholder="как к Вам обращаться" id="username">
+              </label>
+
+              <label class="label-wrap space">
+                <span class="input-title">E-Mail</span><br>
+                <input type="email" class="form-email" placeholder="Куда мне писать" id="email">
+              </label>
+
+              <label class="label-wrap">
+                <span class="input-title">Сообщение</span><br>
+                <textarea class="form-subject" placeholder="Кратко в чём суть" id="subject"></textarea><br>
+              </label>
+
+              <div class="label-wrap form-capcha">
+                <img src="/img/capcha.png">
+              </div>
+
+              <label class="label-wrap space">
+                <!-- <span for="form-code">Введите код c картинки</span><br> -->
+                <input type="text" class="form-code" placeholder="Введите код c картинки" id="form-code">
+              </label>
+
+            <button type="submit" class="form-button-send" value="Отправить">Отправить</button>
+            <button type="submit" class="form-button-clear" value="Очистить">Очистить</button>
             </form>
             </div>
+
         </article><!-- Contacts block end -->
 
       </div><!-- Right block end -->
