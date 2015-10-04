@@ -54,3 +54,7 @@ npm install --save-dev gulp
 
 # varden-dz1
 # varden-dz1
+
+Add project to the Git:
+git remote add origin https://github.com/you-login/name-project.git
+git push -u origin master

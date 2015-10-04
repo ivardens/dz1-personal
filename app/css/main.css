@@ -50,14 +50,13 @@ body{
   line-height: 24px;
 }
 .header{
-  display: block;
+  /*display: block;*/
   background-color: #eff3f7;
   margin-bottom: 40px;
-  width: 100%;
   min-width: 960px;
 }
 .footer{
-  display: block;
+  /*display: block;*/
   background-color: #eff3f7;
   height: 78px;
   min-width: 960px;
@@ -71,15 +70,12 @@ body{
 .wrap-big{
   display: block;
   position: relative;
-  width: 100%;
   max-width: 1200px;
-  min-width: 959px;
   margin: 0 auto;
 }
 .wrap{
   display: block;
   position: relative;
-  width: 100%;
   max-width: 960px;
   min-width: 960px;
   height: 100%;
@@ -119,7 +115,7 @@ body{
 
 /* Navigation */
 .nav {
-  display: block;
+  /*display: block;*/
   width: 250px;
   background-color: #eff3f7;
   border-radius: 3px;
@@ -298,7 +294,7 @@ body{
   margin-right: auto;
 }
 .article h1 {
-  display: block;
+  /*display: block;*/
   margin-top: 0;
   padding-top: 22px;
   margin-bottom: 25px;
@@ -611,8 +607,6 @@ padding: 12px 5px;
 
 .form-button-clear{
   float: right;
-  /*margin-left: 119px;
-  margin-right: 0;*/
 }
 
 /* Form block end */
