@@ -589,8 +589,8 @@ body{
   outline: none;
 }
 .label-wrap input {
-width: 176px;
-padding: 12px 5px;
+width: 174px;
+padding: 6px 6px;
 }
 .label-wrap textarea {
   width: 390px;
