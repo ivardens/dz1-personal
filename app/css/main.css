@@ -14,7 +14,6 @@ html, body {
 /* Footer Stick to the Bottom */
 
 
-
 /* Clear-Fix */
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -113,6 +112,8 @@ body{
 }
 /* Social icons */
 
+
+
 /* Navigation */
 .nav {
   width: 250px;
@@ -126,7 +127,7 @@ body{
   overflow: hidden;
 }
 .nav_li {
-  min-height: 40px;
+  min-height: 73px;
   padding: 0 10px;
 }
 .nav_link {
@@ -170,120 +171,9 @@ body{
 }
 /* Navigation */
 
-/* Contacts */
 
-.contacts {
-  display: block;
-  width: 250px;
-  background-color: #eff3f7;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.contacts-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.contacts-li {
-  height: 40px;
-  width: 100%;
-}
-.contacts-li, .contacts-a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 40px;
-  padding-left: 15px;
-  color: white;
-  font-style: normal;
-}
-.contacts-li.title {
-  background-color: #3ba8c0;
-  font-size: 21px;
-  line-height: 40px;
-  padding-left: 28px;
-}
-.contacts-li.mail {
-  background-color: #41b9d4;
-}
-.contacts-li.phone {
-  background-color: #48cbe8;
-}
-.contacts-li.skype {
-  background-color: #51daf8;
-}
-.contacts-li a {
-  color: white;
-  font-size: 15px;
-  line-height: 40px;
-}
-.contacts-li:hover a {
-  color: white;
-  text-decoration: underline;
-}
-/* Contacts */
-.nav {
-  width: 250px;
-}
 
-.nav_ul {
-  list-style: none;
-  padding-left: 0;
-  background-color: #eff3f7;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.nav_li {
-  min-height: 40px;
-  padding: 0 10px;
-}
-
-.nav_link {
-  display: block;
-  padding: 18px 18px;
-}
-
-.nav_li:hover, .nav_li:hover a {
-  background-color: #51daf8;
-  color: #fff;
-}
-
-.nav_ul a {
-  text-decoration: none;
-  color: #4a545d;
-  font-size: 21px;
-}
-
-.nav-active,
-.nav-active a,
-.nav-active:hover,
-.nav-active:hover a {
-  background-color: #3ba8c0;
-  color: #fff;
-}
-
-.nav_li:before {
-  display: block;
-  content: "";
-  height: 2px;
-  margin: 0 auto;
-  background-color: #3ba8c0;
-}
-
-.nav_li:first-child:before,
-.nav-active + .nav_li:before,
-.nav_li:first-child:before,
-.nav_li:hover:before,
-.nav_li:hover + .nav_li:before {
-  display: block;
-  content: "";
-  height: 2px;
-  margin: 0 auto;
-  background-color: transparent;
-}
-
-/* Contacts */
+/* Contact */
 .contact {
   width: 250px;
 }
@@ -340,11 +230,11 @@ body{
 .contact_skype-color {
   background-color: #51daf8;
 }
-/* Contacts */
+/* Contact */
+
 
 
 /* Content */
-
 .article {
   width: 650px;
   background-color: #eff3f7;
