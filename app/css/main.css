@@ -84,7 +84,7 @@ body{
 .left-block{
   float:left;
   width: 250px;
-  height: 100%;
+  font-size: 0;
 }
 .right-block{
   float:right;
@@ -115,62 +115,57 @@ body{
 
 /* Navigation */
 .nav {
-  /*display: block;*/
   width: 250px;
-  background-color: #eff3f7;
-  border-radius: 3px;
-  overflow: hidden;
-  font-size: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
-.nav-ul {
+.nav_ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
+  background-color: #eff3f7;
+  border-radius: 5px;
+  overflow: hidden;
 }
-.nav-a {
+.nav_li {
+  min-height: 40px;
+  padding: 0 10px;
+}
+.nav_link {
   display: block;
-  text-decoration: none;
-  font-size: 21px;
-  line-height: 72px;
-  padding-left: 28px;
-  color: #4a545d;
+  padding: 25px 18px;
 }
-.nav-a--active,
-.nav-li--active {
-  background-color: #3ba8c0;
-  color: #fff;
-}
-.nav-a:hover,
-.nav-li:hover {
-  display: block;
+.nav_li:hover, .nav_li:hover a {
   background-color: #51daf8;
-  color: #ffffff;
+  color: #fff;
 }
-.nav-a--active:hover,
-.nav-li--active:hover {
+.nav_ul a {
+  text-decoration: none;
+  color: #4a545d;
+  font-size: 21px;
+  line-height: 21px;
+}
+.nav-active,
+.nav-active a,
+.nav-active:hover,
+.nav-active:hover a {
   background-color: #3ba8c0;
   color: #fff;
 }
-.nav-li:before {
-  content: "";
+.nav_li:before {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+  content: "";
   height: 2px;
+  margin: 0 auto;
   background-color: #3ba8c0;
 }
-.nav-li:first-child:before,
-.nav-li--active:before,
-.nav-li--active + li:before,
-.nav-li:hover:before,
-.nav-li:hover + li:before {
-  content: "";
+.nav_li:first-child:before,
+.nav-active + .nav_li:before,
+.nav_li:first-child:before,
+.nav_li:hover:before,
+.nav_li:hover + .nav_li:before {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+  content: "";
   height: 2px;
+  margin: 0 auto;
   background-color: transparent;
 }
 /* Navigation */
@@ -227,58 +222,124 @@ body{
   text-decoration: underline;
 }
 /* Contacts */
-
-/* Contacts */
-
-.contacts {
-  display: block;
+.nav {
   width: 250px;
+}
+
+.nav_ul {
+  list-style: none;
+  padding-left: 0;
   background-color: #eff3f7;
   border-radius: 5px;
   overflow: hidden;
 }
-.contacts-ul {
-  list-style: none;
-  padding: 0;
-  font-style: 0;
-  margin: 0;
+
+.nav_li {
+  min-height: 40px;
+  padding: 0 10px;
 }
-.contacts-li {
-  height: 40px;
-  width: 100%;
+
+.nav_link {
+  display: block;
+  padding: 18px 18px;
 }
-.contacts-li, .contacts-li a {
-  display: inline-block;
+
+.nav_li:hover, .nav_li:hover a {
+  background-color: #51daf8;
+  color: #fff;
+}
+
+.nav_ul a {
   text-decoration: none;
-  font-size: 15px;
-  line-height: 40px;
-  padding-left: 15px;
-  color: white;
+  color: #4a545d;
+  font-size: 21px;
+}
+
+.nav-active,
+.nav-active a,
+.nav-active:hover,
+.nav-active:hover a {
+  background-color: #3ba8c0;
+  color: #fff;
+}
+
+.nav_li:before {
+  display: block;
+  content: "";
+  height: 2px;
+  margin: 0 auto;
+  background-color: #3ba8c0;
+}
+
+.nav_li:first-child:before,
+.nav-active + .nav_li:before,
+.nav_li:first-child:before,
+.nav_li:hover:before,
+.nav_li:hover + .nav_li:before {
+  display: block;
+  content: "";
+  height: 2px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+/* Contacts */
+.contact {
+  width: 250px;
+}
+
+.contact_ul {
+  list-style: none;
+  overflow: hidden;
+  padding-left: 0;
+  background-color: #eff3f7;
+  border-radius: 5px;
+}
+
+.contact_li {
+  display: block;
+  position: relative;
+  min-height: 40px;
+  padding-left: 28px;
   font-style: normal;
 }
-.contacts-li.title {
-  background-color: #3ba8c0;
-  font-size: 21px;
-  line-height: 40px;
-  padding-left: 28px;
+
+.contact_link {
+  display: block;
+  font-size: 15px;
+  lin-height: 16px;
+  text-decoration: none;
+  padding: 10px 5px 0 28px;
+  color: #fff;
 }
-.contacts-li.mail {
-  background-color: #41b9d4;
-}
-.contacts-li.phone {
-  background-color: #48cbe8;
-}
-.contacts-li.skype {
-  background-color: #51daf8;
-}
-.contacts-li a {
-  color: white;
-}
-.contacts-li:hover a {
-  color: white;
+
+.contact_link:hover {
   text-decoration: underline;
 }
 
+.contact_title {
+  display: block;
+  padding-top: 9px;
+  font-size: 21px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.contact_title-color {
+  background-color: #3ba8c0;
+}
+
+.contact_email-color {
+  background-color: #41b9d4;
+}
+
+.contact_phon-color {
+  background-color: #48cbe8;
+}
+
+.contact_skype-color {
+  background-color: #51daf8;
+}
 /* Contacts */
 
 

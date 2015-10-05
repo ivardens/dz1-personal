@@ -102,12 +102,14 @@
     background-position: -170px -5px;
 }
 .mail-before:before{
-    content:"";
-    width: 21px;
-    height: 16px;
-    background: url(../img/sprite-mini.png) -170px -5px no-repeat;
-    float: left;
-    margin: 10px 0 0 0;
+  content:"";
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 16px;
+  top: 50%;
+  margin-top: -8px;
+  background: url(../img/sprite-mini.png) -170px -5px no-repeat;
 }
 .phone {
     width: 19px;
@@ -115,12 +117,14 @@
     background-position: -5px -47px;
 }
 .phone-before:before{
-    content:"";
-    width: 19px;
-    height: 20px;
-    background: url(../img/sprite-mini.png) -5px -47px no-repeat;
-    float: left;
-    margin: 6px 0 0 0;
+  content:"";
+  display: block;
+  position: absolute;
+  width: 19px;
+  height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  background: url(../img/sprite-mini.png) -5px -47px no-repeat;
 }
 .skype {
     width: 20px;
@@ -128,12 +132,14 @@
     background-position: -207px -47px;
 }
 .skype-before:before{
-    content:"";
-    width: 20px;
-    height: 20px;
-    background: url(../img/sprite-mini.png) -207px -47px no-repeat;
-    float: left;
-    margin: 6px 0 0 0;
+  content:"";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  background: url(../img/sprite-mini.png) -207px -47px no-repeat;
 }
 
 /* Social icons */
