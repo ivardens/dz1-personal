@@ -1,0 +1,111 @@
+
+
+
+/* Form block start */
+
+.article-form {
+  width: 650px;
+  height: auto;
+  border-radius: 0 0 5px 5px;
+  background-color: #eff3f7;
+  padding-bottom: 190px;
+  margin-bottom: 40px;
+}
+.form-title-wrap {
+  width: 100%;
+  height: auto;
+  padding: 49px 0 47px 0;
+  background-color: #48cbe8;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 17px solid #67dffa;
+  margin-bottom: 45px;
+}
+.form-title-wrap h1 {
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+}
+.form-wrap {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+.label-wrap {
+  display: inline-block;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 25px;
+  color: #959aa8;
+  vertical-align: middle;
+}
+.space {
+  margin-left: 15px;
+}
+.label-wrap input, .label-wrap textarea, .label-wrap img, .label-wrap:focus {
+  border: 2px solid #67dffa;
+  border-radius: 5px;
+  color: #48cbe8;
+  font-size: 13px;
+  line-height: 25px;
+  outline: none;
+}
+.label-wrap input {
+  width: 174px;
+  padding: 6px 6px;
+}
+.label-wrap textarea {
+  width: 390px;
+  height: 180px;
+  max-width: 390px;
+  max-height: 189px;
+}
+.label-wrap img {
+  width: 186px;
+  height: 78px;
+}
+.label-wrap::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+.label-wrap::-moz-placeholder {
+  color: #48cbe8;
+}
+.label-wrap::-moz-placeholder {
+  color: #48cbe8;
+}
+.label-wrap:-ms-input-placeholder {
+  color: #48cbe8;
+}
+.form-button-send, .form-button-clear {
+  width: 138px;
+  height: 33px;
+  outline: none;
+  color: #fff;
+  background-color: #849db5;
+  border-radius: 5px;
+  border: 0 solid transparent;
+  box-shadow: inset 0px -2px 0 0 #687b8f;
+  -webkit-box-shadow: inset 0px -2px 0 0 #687b8f;
+  -moz-box-shadow: inset 0px -2px 0 0 #687b8f;
+  box-shadow: inset 0px -2px 0 0 #687b8f;
+}
+.form-button-send:hover, .form-button-clear:hover {
+  width: 138px;
+  height: 33px;
+  color: #fff;
+  background-color: #48cbe8;
+  border-radius: 5px;
+  border: 0 solid transparent;
+  box-shadow: inset 0px -2px 0 0 #3ba8c0;
+  -webkit-box-shadow: inset 0px -2px 0 0 #3ba8c0;
+  -moz-box-shadow: inset 0px -2px 0 0 #3ba8c0;
+  box-shadow: inset 0px -2px 0 0 #3ba8c0;
+}
+.form-button-clear {
+  float: right;
+}
+
+/* Form block end */

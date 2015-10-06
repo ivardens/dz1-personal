@@ -1,0 +1,101 @@
+/* popup */
+
+.popup {
+  position: absolute;
+  width: 590px;
+  top: 50%;
+  left:50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  background-color: #eff3f7;
+  min-height: 378px;
+  border-radius: 5px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: rgb(239, 243, 247);
+  box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+  -webkit-box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+  -moz-box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+}
+.popup_title {
+  background-color: #48cbe8;
+  min-height: 92px;
+  border-bottom: 15px solid #67dffa;
+  color: #fff;
+}
+.popup_title p {
+  margin: 0;
+  padding-top: 25px;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.popup_form_wrap {
+  display: block;
+  width: 424px;
+  margin: 0 auto;
+  padding: 25px;
+}
+.popup_label {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 36px;
+  color: #959aa8;
+}
+.popup_form input {
+  display: block;
+  outline: none;
+  margin: 24px 0 24px 0;
+  padding: 10px;
+  min-height: 40px;
+  min-width: 398px;
+  border-radius: 5px;
+  color: #48cbe8;
+  border: 2px solid #48cbe8;
+  overflow: hidden;
+}
+.popup_form::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+.popup_form::-moz-placeholder {
+  color: #48cbe8;
+}
+.popup_form::-moz-placeholder {
+  color: #48cbe8;
+}
+.popup_form:-ms-input-placeholder {
+  color: #48cbe8;
+}
+.popup_btn {
+  display: block;
+  min-width: 138px;
+  min-height: 33px;
+  font-size: 36px;
+  margin: 0 auto;
+  padding: 10px 65px;
+  outline: none;
+  color: #fff;
+  background-color: #849db5;
+  border-radius: 5px;
+  border: 0 solid transparent;
+  box-shadow: inset 0px -2px 0 0 #687b8f;
+  -webkit-box-shadow: inset 0px -2px 0 0 #687b8f;
+  -moz-box-shadow: inset 0px -2px 0 0 #687b8f;
+}
+.popup_btn:hover {
+  min-width: 138px;
+  min-height: 33px;
+  font-size: 36px;
+  margin: 0 auto;
+  padding: 10px 65px;
+  color: #fff;
+  background-color: #48cbe8;
+  border-radius: 5px;
+  border: 0 solid transparent;
+  box-shadow: inset 0px -2px 0 0 #3ba8c0;
+  -webkit-box-shadow: inset 0px -2px 0 0 #3ba8c0;
+  -moz-box-shadow: inset 0px -2px 0 0 #3ba8c0;
+}
+
+  /* popup */

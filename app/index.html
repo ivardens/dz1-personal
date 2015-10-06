@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="bower/modernizr/modernizr.js"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
@@ -29,7 +30,6 @@
   <link rel="stylesheet" href="css/sprite-mini.css">
   <link rel="stylesheet" href="fonts/fira/fira.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/modernizr-custom.min.js"></script>
   <title>Обо мне</title>
 </head>
 
@@ -203,15 +203,17 @@
   <!-- Footer block -->
   <footer class="footer line-top">
     <div class="wrap clearfix">
-      <a href="#" class="lock sprite lock-off text-off" title="Login">Login</a>
+      <div class="lock_block lock sprite lock-off">
+        <a href="login.html" class="lock_text" title="Login">Войти</a>
+      </div>
       <p class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
     </div>
   </footer>
   <!-- JS -->
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
-  <script src="js/common.js"></script> -->
+  <script src="js/common.js"></script>
 
-  </body>
+</body>
 
-  </html>
+</html>
