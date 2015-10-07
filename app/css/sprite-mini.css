@@ -30,9 +30,9 @@
     /*transform: translateY(-50%) translateX(-50%);*/
 }
 .close {
-    width: 25px;
-    height: 25px;
-    background-position: -93px -5px;
+    width: 24px;
+    height: 26px;
+    background-position: -84px -5px;
 }
 
 .cloud {
@@ -145,49 +145,49 @@
 /* Social icons */
 
 .vk {
-    width: 47px;
-    height: 47px;
+    width: 49px;
+    height: 49px;
     background-position: -119px -172px;
 }
 
 .vk:hover {
-    width: 47px;
-    height: 47px;
+    width: 49px;
+    height: 49px;
     background-position: -176px -172px;
 }
 
 .tw {
-    width: 47px;
-    height: 47px;
+    width: 49px;
+    height: 49px;
     background-position: -5px -172px;
 }
 
 .tw:hover {
-    width: 47px;
-    height: 47px;
+    width: 49px;
+    height: 49px;
     background-position: -62px -172px;
 }
 
 .fb {
-    width: 47px;
-    height: 47px;
+    width: 49px;
+    height: 49px;
     background-position: -93px -40px;
 }
 
 .fb:hover {
-    width: 47px;
-    height: 47px;
+    width: 49px;
+    height: 49px;
     background-position: -150px -40px;
 }
 
 .git {
-    width: 47px;
-    height: 47px;
+    width: 49px;
+    height: 49px;
     background-position: -41px -97px;
 }
 
 .git:hover {
-    width: 47px;
-    height: 47px;
+    width: 49px;
+    height: 49px;
     background-position: -98px -97px;
 }

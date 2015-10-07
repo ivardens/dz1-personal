@@ -30,8 +30,7 @@
   <link rel="stylesheet" href="css/sprite-mini.css">
   <link rel="stylesheet" href="fonts/fira/fira.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/login.css">
-  <script src="bower/jquery-placeholder/jquery.placeholder.min"></script>
+  <link rel="stylesheet" href="css/add_project.css">
   <title>Add</title>
 </head>
 
@@ -41,16 +40,28 @@
 
 <body>
   <div class="overlay" title="window"></div>
+
   <div class="popup_add">
     <div class="popup_add_title">
-      <p>Авторизируйтесь</p>
+      <span>Добавить проект</span>
+      <a href="#"><span class="popup_off sprite close"></span></a>
     </div>
     <div class="popup_add_form_wrap">
-      <form action="" name="login" class="popup_add_form">
+      <form action="#" name="login" class="popup_add_form">
         <label class="popup_add_label">Название проекта
           <input type="text" name="name" placeholder="Введите название" class="popup_add_name" />
         </label>
         <label class="popup_add_label">Картинка проекта
+          <div class="popup_add_input_wrapper">
+              <div class="popup_add_input">Загрузите изображение</div>
+              <div class="popup_add_icon_wrapper">
+                <span class="popup_add_icon sprite cloud"></span>
+              </div>
+          </div>
+
+          <!-- <div class="popup_add_img">Загрузите изображение</div>
+
+          <span class="popup_add_img_pic"></span> -->
           <input type="file" name="img" placeholder="Загрузите изображение" class="popup_add_img" />
         </label>
         <label class="popup_add_label">URL проекта
