@@ -93,6 +93,12 @@
     float: left;
     margin-top: 39px;
     margin-left: 0px;
+    margin-right: 0;
+    width: 243px;
+  }
+  .logo figcaption{
+    margin: 0;
+    padding: 0;
   }
   .social {
     float: right;
