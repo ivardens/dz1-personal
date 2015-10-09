@@ -1,25 +1,6 @@
 // Input file form
 $(document).ready(function () {
-  $('#open_popup_button').click(openPopup);
-
-  $('.input__file').on('change', function () { // по событию change инпут файла
-
-    var
-      $this = $(this),
-      val = $this.val(); // берем value у инпут файла (путь загруженого файла)
-
-    //что бы отрезать /fakepath/ (это добавляет сам браузер)
-
-    var
-      regexp = /c:\\fakepath\\/gmi, //регулярное выражение для поиска
-      pureVal = val.replace(regexp, ''); // заменяем то что нашли в строке - на пустоту
-
-    $('.input__fake-text').text(pureVal); // вставляем в блок с текстом имя файла
-
-  });
-
-
-});
+  $('#open_popup_button').click(openPopup);});
 // open end close popup window
 function openPopup() {
   var container = $('<div class="popup_container"></div>'),
@@ -40,7 +21,9 @@ function closePopup() {
 
 $(document).ready(function(){
 
-  $('.input__file').on('change', function () { // по событию change инпут файла
+  $(document).on('change', '.input__file', function () {
+
+  // $('.input__file').on('change', function () { // по событию change инпут файла
 
     var
       $this = $(this),
