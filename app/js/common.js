@@ -40,7 +40,7 @@ function closePopup() {
 
 $(document).ready(function(){
 
-	$('.form_input-file-origin').on('change', function(){
+	$('.form_input-file').on('change', function(){
 
 		var
 			$this = $(this),
