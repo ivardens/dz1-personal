@@ -40,15 +40,19 @@ function closePopup() {
 
 $(document).ready(function(){
 
-	$('.form_input-file').on('change', function(){
+  $('.input__file').on('change', function () { // по событию change инпут файла
 
-		var
-			$this = $(this),
-			value = $this.val(),
-			pureVal = value.replace(/c:\\fakepath\\/gmi, "");
+    var
+      $this = $(this),
+      val = $this.val(); // берем value у инпут файла (путь загруженого файла)
 
-		$('.form_input-fake').text(pureVal);
+    //что бы отрезать /fakepath/ (это добавляет сам браузер)
 
+    var
+      regexp = /c:\\fakepath\\/gmi, //регулярное выражение для поиска
+      pureVal = val.replace(regexp, ''); // заменяем то что нашли в строке - на пустоту
+
+    $('.input__fake-text').text(pureVal); // вставляем в блок с текстом имя файла
 	});
 
 });
