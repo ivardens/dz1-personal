@@ -29,6 +29,7 @@
   height: 44px;
   border-bottom: 9px solid #67dffa;
   color: #fff;
+  margin-bottom: 6px;
 }
 .popup_add_title span {
   display: block;
@@ -49,7 +50,8 @@
   margin: 0 auto;
 }
 .popup_add_label {
-  display: block;
+  display: inline-block;
+  position: relative;
   color: #959aa8;
   margin: 6px auto 12px auto;
 }
@@ -58,7 +60,7 @@
   display: block;
   outline: none;
   font-size: 13px;
-  margin: 6px auto 12px auto;
+  margin: 5px 0 5px 0;
   padding: 0 5px;
   border-radius: 5px;
   color: #48cbe8;
@@ -72,9 +74,11 @@
 }
 .popup_add_label textarea {
   min-width: 306px;
-  min-height: 106px;
+  min-height: 96px;
   max-width: 306px;
-  max-height: 106px;
+  max-height: 96px;
+  padding: 5px;
+  margin: 5px 0 5px 0;
 }
 .popup_add_name{
   width: 256px;
@@ -115,10 +119,14 @@
 }
 
 .popup_add_img{
-  position: absolute;
-  opacity: 0;
+  display: block;
+    padding: auto;
+    top: 0;
+    left: -9999px;
+    position: absolute;
   z-index: -10;
 }
+
 .popup_add_input_wrapper{
   position: relative;
   width: 316px;
@@ -151,4 +159,3 @@
 
 }
   /* popup */
-  

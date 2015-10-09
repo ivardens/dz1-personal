@@ -5,13 +5,26 @@
 }
 
 .add-img {
+  position: absolute;
+  left:50%;
+  top: 50%;
+  margin-top: -40px;
+  margin-left: -16px;
     width: 32px;
     height: 32px;
     background-position: -5px -5px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
+}
+.add-img-after:after {
+  content:"";
+  display: block;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 72px;
+    width: 32px;
+    height: 32px;
+    background: url(../img/sprite-mini.png) -5px -5px no-repeat;
+}
 .bag {
     width: 36px;
     height: 34px;
@@ -25,7 +38,7 @@
     height: 34px;
     background: url(../img/sprite-mini.png) -47px -5px no-repeat;
     top: 50%;
-    margin-top: -36px;
+    margin-top: -30px;
     left:20px;
     /*transform: translateY(-50%) translateX(-50%);*/
 }
@@ -54,7 +67,7 @@
     height: 32px;
     background: url(../img/sprite-mini.png) -5px -97px no-repeat;
     top: 50%;
-    margin-top: -32px;
+    margin-top: -30px;
     left:30px;
 }
 

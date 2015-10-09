@@ -168,13 +168,11 @@
             </figcaption>
           </figure>
 
+
           <figure class="poject">
-            <div class="project_wrap">
-              <span class="sprite add-img project_add"></span>
-              <div class="project_hover">
-                <a id="open_popup_button" class="project_add_link">
-                  <span>Добавить проект</span>
-                </a>
+            <div class="add-project add-img-after">
+              <div class="add-project-wrap">
+                <a id="open_popup_button" href="#" class="add-text">Добавить проект</a>
               </div>
             </div>
           </figure>
@@ -205,33 +203,12 @@
     window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')
   </script>
   <script src="js/common.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('#open_popup_button').click(openPopup)
-    })
-
-    function openPopup() {
-      var container = $('<div class="popup_container"></div>'),
-        overlay = $('<div class="popup_overlay"></div>')
-
-      $('#popup_template').clone().appendTo(container);
-
-      $(document.body).append(overlay);
-      $(document.body).append(container);
-
-      container.find('div.popup_add_title > a').one('click', closePopup);
-    }
-
-    function closePopup() {
-      $(document.body).find('.popup_container').remove()
-      $(document.body).find('.popup_overlay').remove()
-    }
-  </script>
 
 
+<!-- popup window -->
   <div class="popup_add" id="popup_template">
     <div class="popup_add_title">
-      <span>Добавить проект</span>
+      <span>Добавление проекта</span>
       <a href="#">
         <span class="popup_off sprite close"></span>
       </a>
@@ -243,13 +220,22 @@
         </label>
         <label class="popup_add_label">Картинка проекта
           <div class="popup_add_input_wrapper">
-            <div class="popup_add_input">Загрузите изображение</div>
+            <div class="popup_add_input input__fake-text">Загрузите изображение</div>
             <div class="popup_add_icon_wrapper">
               <span class="popup_add_icon sprite cloud"></span>
             </div>
           </div>
-          <input type="file" name="img" placeholder="Загрузите изображение" class="popup_add_img">
+          <input type="file" name="img" placeholder="Загрузите изображение" class="input__file popup_add_img">
         </label>
+
+        <label class="input__label">Картинка проекта
+          <div class="input__fake">
+            <div class="input__fake-text">Загрузите изображение</div>
+            <div class="input__fake-btn"><span class="popup_add_icon sprite cloud"></span></div>
+          </div>
+          <input type="file" class="input__file">
+        </label>
+
         <label class="popup_add_label">URL проекта
           <input type="text" name="name" placeholder="Добавьте ссылку" class="popup_add_name">
         </label>

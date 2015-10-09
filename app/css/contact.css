@@ -8,13 +8,13 @@
   height: auto;
   border-radius: 0 0 5px 5px;
   background-color: #eff3f7;
-  padding-bottom: 190px;
+  padding-bottom: 40px;
   margin-bottom: 40px;
 }
 .form-title-wrap {
   width: 100%;
   height: auto;
-  padding: 49px 0 47px 0;
+  padding: 48px 0 44px 0;
   background-color: #48cbe8;
   text-align: center;
   color: #fff;
@@ -52,19 +52,23 @@
   font-size: 13px;
   line-height: 25px;
   outline: none;
+  padding: 10px;
+}
+.label-wrap img {
+  padding: 0px;
 }
 .label-wrap input {
   width: 174px;
   padding: 6px 6px;
 }
 .label-wrap textarea {
-  width: 390px;
-  height: 180px;
-  max-width: 390px;
+  width: 378px;
+  height: 162px;
+  max-width: 410px;
   max-height: 189px;
 }
 .label-wrap img {
-  width: 186px;
+  width: 166px;
   height: 78px;
 }
 .label-wrap::-webkit-input-placeholder {
