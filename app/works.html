@@ -218,7 +218,7 @@
         <label class="popup_add_label">Название проекта
           <input type="text" name="name" placeholder="Введите название" class="popup_add_name">
         </label>
-        <label class="popup_add_label">Картинка проекта
+        <!-- <label class="popup_add_label">Картинка проекта
           <div class="popup_add_input_wrapper">
             <div class="popup_add_input input__fake-text">Загрузите изображение</div>
             <div class="popup_add_icon_wrapper">
@@ -226,14 +226,14 @@
             </div>
           </div>
           <input type="file" name="img" placeholder="Загрузите изображение" class="input__file popup_add_img">
-        </label>
+        </label> -->
 
-        <label class="input__label">Картинка проекта
+        <label class="input__label popup_add_label">Картинка проекта
           <div class="input__fake">
-            <div class="input__fake-text">Загрузите изображение</div>
+            <div class="input__fake-text" id="input__fake-text">Загрузите изображение</div>
             <div class="input__fake-btn"><span class="popup_add_icon sprite cloud"></span></div>
           </div>
-          <input type="file" class="input__file">
+          <input type="file" class="input__file" id="input__file" placeholder="Загрузите изображение" >
         </label>
 
         <label class="popup_add_label">URL проекта

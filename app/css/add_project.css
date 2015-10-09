@@ -53,14 +53,13 @@
   display: inline-block;
   position: relative;
   color: #959aa8;
-  margin: 6px auto 12px auto;
+  margin: 5px 0 5px 0;
 }
 .popup_add_form input,
 .popup_add_form textarea {
   display: block;
   outline: none;
   font-size: 13px;
-  margin: 5px 0 5px 0;
   padding: 0 5px;
   border-radius: 5px;
   color: #48cbe8;
@@ -71,6 +70,7 @@
 .popup_add_form input{
   width: 306px;
   height: 36px;
+  margin: 5px 0 5px 0;
 }
 .popup_add_label textarea {
   min-width: 306px;
@@ -100,8 +100,8 @@
   min-width: 140px;
   min-height: 33px;
   font-size: 19px;
-  margin: 0 auto 15px;
-  padding: 10px 28px;
+  margin: 0px auto 15px;
+  padding: 8px 28px;
   outline: none;
   color: #fff;
   background-color: #849db5;
