@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="css/works.css">
   <link rel="stylesheet" href="css/add_project.css">
   <script src="bower/modernizr/modernizr.js"></script>
-  <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+
 
   <title>Обо мне</title>
 </head>
@@ -200,14 +200,15 @@
     </div>
   </footer>
   <!-- JS -->
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')
   </script>
+  <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
   <script src="js/common.js"></script>
 
 
-<!-- popup window -->
+  <!-- popup window -->
   <div class="popup_add" id="popup_template">
     <div class="popup_add_title">
       <span>Добавление проекта</span>
@@ -224,9 +225,11 @@
         <label class="input__label popup_add_label">Картинка проекта
           <div class="input__fake">
             <div class="input__fake-text" id="input__fake-text">Загрузите изображение</div>
-            <div class="input__fake-btn"><span class="popup_add_icon sprite cloud"></span></div>
+            <div class="input__fake-btn">
+              <span class="popup_add_icon sprite cloud"></span>
+            </div>
           </div>
-          <input type="file" class="input__file" id="input__file" placeholder="Загрузите изображение" >
+          <input type="file" class="input__file" id="input__file" placeholder="Загрузите изображение">
         </label>
 
         <label class="popup_add_label">URL проекта

@@ -4,7 +4,6 @@
     height: 100%;
     margin: 0;
   }
-
   .wrapper {
     min-height: 100%;
     height: auto !important;
@@ -96,7 +95,7 @@
     margin-right: 0;
     width: 243px;
   }
-  .logo figcaption{
+  .logo figcaption {
     margin: 0;
     padding: 0;
   }
@@ -109,7 +108,7 @@
   .social-item {
     display: inline-block;
     list-style: none;
-    margin-left: 19px;
+    margin-left: 20px;
   }
   .social-item:first-child {
     margin-left: 0px;
@@ -396,21 +395,44 @@
     bottom: -100%;
   }
   /* Gradient line */
+
   .fileUpload {
-      position: relative;
-      overflow: hidden;
-      margin: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
   }
   .fileUpload input.upload {
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin: 0;
-      padding: 0;
-      font-size: 20px;
-      cursor: pointer;
-      opacity: 0;
-      filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
   }
-  input, textarea { color: #48cbe8; }
-  .placeholder { color: #48cbe8; }
+  input, textarea {
+    color: #48cbe8;
+    vertical-align: middle;
+  }
+  .placeholder {
+    color: #48cbe8;
+    vertical-align: middle;
+  }
+  ::-webkit-input-placeholder {
+    color: #48cbe8;
+    vertical-align: middle;
+  }
+  ::-moz-placeholder {
+    color: #48cbe8;
+    vertical-align: middle;
+  }
+  ::-moz-placeholder {
+    color: #48cbe8;
+    vertical-align: middle;
+  }
+  :-ms-input-placeholder {
+    color: #48cbe8;
+    vertical-align: middle;
+  }

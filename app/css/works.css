@@ -181,7 +181,7 @@
 .input__label {
     display: inline-block;
     position: relative;
-    color: #959aa8;
+    color: #48cbe8;
     margin: 0px 0 0px 0;
 }
 
@@ -191,6 +191,7 @@
     top: 0;
     left: -9999px;
     position: absolute;
+    color: #48cbe8;
 }
 
 .input__fake {
@@ -201,14 +202,14 @@
     line-height: 36px;
     padding: 0px 5px;
     position: relative;
-    color: #959aa8;
+    color: #48cbe8;
     background-color: #fff;
     border: 2px solid #48cbe8;
     border-radius: 5px;
     cursor: pointer;
 }
 .input__fake-text{
-
+  color: #48cbe8;
 }
 .input__fake-btn {
     position: absolute;

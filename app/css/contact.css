@@ -42,6 +42,17 @@
   color: #959aa8;
   vertical-align: middle;
 }
+.wrap-label{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right; 
+}
 .space {
   margin-left: 15px;
 }
@@ -68,21 +79,21 @@
   max-height: 189px;
 }
 .label-wrap img {
-  width: 166px;
+  width: 186px;
   height: 78px;
 }
-/*.label-wrap::-webkit-input-placeholder {
-  color: #48cbe8;
+.form-capcha{
+  display: block;
+  position: relative;
+  width: 400px;
 }
-.label-wrap::-moz-placeholder {
-  color: #48cbe8;
+.form-capcha input{
+  display: block;
+  position: absolute;
+  top:50%;
+  margin-top: -20px;
+  right: 0;
 }
-.label-wrap::-moz-placeholder {
-  color: #48cbe8;
-}
-.label-wrap:-ms-input-placeholder {
-  color: #48cbe8;
-}*/
 .form-button-send, .form-button-clear {
   width: 138px;
   height: 33px;
