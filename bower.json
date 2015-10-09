@@ -1,7 +1,7 @@
 {
   "name": "dz1-light_varden",
   "dependencies": {
-    "jquery": "~2.1.4",
+    "jquery": "1.11",
     "modernizr": "~2.8.3",
     "normalize-css": "normalize.css#~3.0.3",
     "jquery-placeholder": "~2.1.3",

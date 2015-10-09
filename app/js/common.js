@@ -23,7 +23,7 @@ $(document).ready(function(){
 
   $(document).on('change', '.input__file', function () {
 
-  // $('.input__file').on('change', function () { // по событию change инпут файла
+  // по событию change инпут файла
 
     var
       $this = $(this),
@@ -37,5 +37,12 @@ $(document).ready(function(){
 
     $('.input__fake-text').text(pureVal); // вставляем в блок с текстом имя файла
 	});
+});
 
+$(document).ready(function(){
+jQuery('input, textarea').placeholder();
+// jQuery(document).('input, textarea').placeholder();
+jQuery('input[placeholder], textarea[placeholder]').placeholder();
+// jQuery(document).on('input[placeholder], textarea[placeholder]').placeholder();
+// jQuery(document).('input[placeholder], textarea[placeholder]').placeholder();
 });

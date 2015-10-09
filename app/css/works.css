@@ -205,8 +205,10 @@
     background-color: #fff;
     border: 2px solid #48cbe8;
     border-radius: 5px;
+    cursor: pointer;
 }
 .input__fake-text{
+
 }
 .input__fake-btn {
     position: absolute;
