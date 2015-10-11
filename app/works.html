@@ -31,7 +31,6 @@
   <link rel="stylesheet" href="fonts/fira/fira.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/works.css">
-  <link rel="stylesheet" href="css/add_project.css">
   <script src="bower/modernizr/modernizr.js"></script>
 
 
@@ -210,39 +209,38 @@
 
   <!-- popup window -->
   <div class="popup_add" id="popup_template">
+    <!--<div class="popup-title">Добавление проекта</div>-->
     <div class="popup_add_title">
       <span>Добавление проекта</span>
-      <a href="#">
-        <span class="popup_off sprite close"></span>
-      </a>
+      <a href="#"><span class="popup_add-close sprite close"></span></a>
     </div>
-    <div class="popup_add_form_wrap">
-      <form action="#" name="login" class="popup_add_form">
-        <label class="popup_add_label">Название проекта
-          <input type="text" name="name" placeholder="Введите название" class="popup_add_name">
+    <div class="popup_add-container">
+      <form action="" method="post" class="popup_add-form">
+        <label class="popup_add-label">
+          <div class="popup_add-label-title">Название проекта</div>
+          <input type="text" name="" class="popup_add-input-text" placeholder="Введите название">
         </label>
-
-        <label class="input__label popup_add_label">Картинка проекта
-          <div class="input__fake">
-            <div class="input__fake-text" id="input__fake-text">Загрузите изображение</div>
-            <div class="input__fake-btn">
-              <span class="popup_add_icon sprite cloud"></span>
-            </div>
+        <label class="popup_add-label">
+          <div class="popup_add-label-title">Картинка проекта</div>
+          <div class="popup_add-input-file">
+            <input type="file" name="" class="popup_add-input-file-upload">
+            <div class="popup_add-input-text add_fake">Загрузите изображение</div>
+            <div class="popup_add-upload-icon"><span class="sprite cloud"></span></div>
           </div>
-          <input type="file" class="input__file" id="input__file" placeholder="Загрузите изображение">
         </label>
+        <label class="popup_add-label">
+          <div class="popup_add-label-title">URL проекта</div>
+          <input type="text" name="" class="popup_add-input-text" placeholder="Добавьте ссылку">
+        </label>
+        <label class="popup_add-label">
+          <div class="popup_add-label-title">Описание</div>
+          <textarea class="popup_add-textarea" placeholder="Пара слов о вашем проекте"></textarea>
+        </label>
+        <button class="button-add" type="submit">Добавить</button>
 
-        <label class="popup_add_label">URL проекта
-          <input type="text" name="name" placeholder="Добавьте ссылку" class="popup_add_name">
-        </label>
-        <label class="popup_add_label">Описание
-          <textarea placeholder="Пара слов о вашем проекте" class="popup_add_subject"></textarea>
-        </label>
-        <button type="submit" value="Добавить" class="popup_add_btn">Добавить</button>
       </form>
     </div>
   </div>
-
 
 </body>
 

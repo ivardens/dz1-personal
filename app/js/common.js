@@ -21,7 +21,7 @@ function closePopup() {
 
 $(document).ready(function(){
 
-  $(document).on('change', '.input__file', function () {
+  $(document).on('change', '.popup_add-input-file-upload', function () {
 
   // по событию change инпут файла
 
@@ -35,7 +35,7 @@ $(document).ready(function(){
       regexp = /c:\\fakepath\\/gmi, //регулярное выражение для поиска
       pureVal = val.replace(regexp, ''); // заменяем то что нашли в строке - на пустоту
 
-    $('.input__fake-text').text(pureVal); // вставляем в блок с текстом имя файла
+    $('.add_fake').text(pureVal); // вставляем в блок с текстом имя файла
 	});
 });
 

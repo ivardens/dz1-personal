@@ -44,14 +44,19 @@
 }
 .close {
     width: 24px;
-    height: 26px;
-    background-position: -84px -5px;
+    height: 25px;
+    background-position: -83px -5px;
 }
 
 .cloud {
+  position: absolute;
+  margin-top:6px;
+  margin-left: 6px;
     width: 32px;
-    height: 25px;
-    background-position: -128px -5px;
+    height: 35px;
+    background: url(../img/sprite-mini.png) -128px -5px no-repeat;
+    overflow: hidden;
+    /*background-position: -128px -5px;*/
 }
 
 .file {

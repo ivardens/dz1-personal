@@ -168,54 +168,178 @@
   color: #fff;
   padding-top: 40%;
   text-align: center;
-}
-
-.add-text {
-  display: block;
-  text-align: center;
   height: 100%;
 }
+
 /**/
 /**/
-/**/
-.input__label {
-    display: inline-block;
-    position: relative;
-    color: #48cbe8;
-    margin: 0px 0 0px 0;
+
+.popup_add {
+  qdisplay: none;
+  position: absolute;
+  width: 362px;
+  top: 50%;
+  left:50%;
+  margin-left: -181px;
+  margin-top: -370px;
+  min-height: 378px;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #eff3f7;
+  background-color: rgb(239, 243, 247);
+  box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+  -webkit-box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+  -moz-box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
 }
 
-.input__file {
-    display: block;
-    padding: auto;
-    top: 0;
-    left: -9999px;
-    position: absolute;
-    color: #48cbe8;
+.popup_add-form {
+}
+.popup_add_title {
+  position: relative;
+  height: 44px;
+  background-color: #48cbe8;
+  border-bottom: 9px solid #67dffa;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.popup_add_title span {
+  display: block;
+  padding-left: 13px;
+  padding-top: 3px;
+  font-size: 25px;
+  line-height: 44px;
 }
 
-.input__fake {
-    width: 306px;
-    min-height: 36px;
-    margin: 5px 0 5px 0;
-    font-size: 13px;
-    line-height: 36px;
-    padding: 0px 5px;
-    position: relative;
-    color: #48cbe8;
-    background-color: #fff;
-    border: 2px solid #48cbe8;
-    border-radius: 5px;
-    cursor: pointer;
+.popup_add-container {
+  position: relative;
+  padding: 5px 0 0 0;
+  width: 320px;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  margin:auto;
 }
-.input__fake-text{
+
+.popup_add-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.popup_add-label-title {
+  font-size: 17px;
+  line-height: 19px;
+  margin-bottom: 5px;
+  color: #959aa8;
+}
+
+.popup_add-input-text {
+  display: block;
+  width: 295px;
+  padding: 10px 11px 8px 10px;
+  min-height: 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  font-size: 13px;
   color: #48cbe8;
+  border: 1px solid #48cbe8;
+  outline: none;
+  overflow: hidden;
 }
-.input__fake-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 36px;
-    background-color: #48cbe8;
+
+.popup_add-input-file {
+  position: relative;
+}
+
+.popup_add-input-file-upload {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.popup_add-input-fake {}
+
+.popup_add-upload-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 270px;
+  border: 1px solid #48cbe8;
+  background-color: #48cbe8;
+  border-radius:0 5px 5px 0;
+  z-index: 10;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.popup_add-textarea {
+  resize: none;
+  width: 296px;
+  height: 90px;
+  padding: 10px;
+  border: 1px solid #48cbe8;
+  border-radius: 5px;
+  font-size: 13px;
+  outline: none;
+}
+
+.popup_add-close {
+  position: absolute;
+  right:10px;
+  top:10px;
+}
+
+::-webkit-input-placeholder {
+  color: #48cbe8;
+  vertical-align: middle;
+}
+
+::-moz-placeholder {
+  color: #48cbe8;
+  vertical-align: middle;
+}
+
+::-moz-placeholder {
+  color: #48cbe8;
+  vertical-align: middle;
+}
+
+:-ms-input-placeholder {
+  color: #48cbe8;
+  vertical-align: middle;
+}
+
+.add_fake {
+  padding: 10px 10px 8px 10px;
+  min-height: 20px;
+  font-size: 13px;
+  color: #48cbe8;
+  vertical-align: middle;
+  background-color: #fff;
+
+}
+
+.button-add {
+  display: block;
+  width: 140px;
+  height: 33px;
+  font-size: 19px;
+  margin: 15px auto 20px;
+  padding: 8px 28px;
+  outline: none;
+  color: #fff;
+  background-color: #849db5;
+  border-radius: 5px;
+  border: 0 solid transparent;
+  box-shadow: inset 0px -2px 0 0 #687b8f;
+  -webkit-box-shadow: inset 0px -2px 0 0 #687b8f;
+  -moz-box-shadow: inset 0px -2px 0 0 #687b8f;
+}
+.button-add:hover {
+  background-color: #48cbe8;
+  box-shadow: inset 0px -2px 0 0 #3ba8c0;
+  -webkit-box-shadow: inset 0px -2px 0 0 #3ba8c0;
+  -moz-box-shadow: inset 0px -2px 0 0 #3ba8c0;
 }
