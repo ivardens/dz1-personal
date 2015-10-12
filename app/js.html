@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="bower/modernizr/modernizr.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <meta name="apple-mobile-web-app-title" content="varden">
+  <meta name="application-name" content="varden">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+  <link rel="stylesheet" href="css/sprite-mini.css">
+  <link rel="stylesheet" href="fonts/fira/fira.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/works.css">
+  <script src="bower/modernizr/modernizr.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>hello world</h1>
+
+
+  <article class="article article-works">
+    <h1 class="article-title">Мои работы.</h1>
+
+    <figure class="poject">
+      <div class="project_wrap">
+        <img src="img/sample-site-01.jpg" alt="site" class="project_img" />
+        <div class="project_hover">
+          <a href="http://www.adamsnotes.net" target="_blank" class="project_link">
+            <span>adamsnotes.net</span>
+          </a>
+        </div>
+      </div>
+      <figcaption>
+        <p>Зметки эмигрантки</p>
+        <p>Персональный сайт моей супруги</p>
+      </figcaption>
+    </figure>
+
+    <figure class="poject">
+      <div class="project_wrap">
+        <img src="img/sample-site-02.jpg" alt="site" class="project_img" />
+        <div class="project_hover">
+          <a href="http://www.adamsnotes.net" target="_blank" class="project_link">
+            <span>www.ste.com</span>
+          </a>
+        </div>
+      </div>
+      <figcaption>
+        <p>Информация о проекте</p>
+        <p>1 превью 2 строки</p>
+      </figcaption>
+    </figure>
+
+    <figure class="poject">
+      <div class="project_wrap">
+        <img src="img/sample-site-03.jpg" alt="site" class="project_img" />
+        <div class="project_hover">
+          <a href="http://www.adamsnotes.net" target="_blank" class="project_link">
+            <span>www.ste.com</span>
+          </a>
+        </div>
+      </div>
+      <figcaption>
+        <p>Информация о проекте</p>
+        <p>1 превью 2 строки</p>
+      </figcaption>
+    </figure>
+
+    <figure class="poject">
+      <div class="project_wrap">
+        <img src="img/sample-site-04.jpg" alt="site" class="project_img" />
+        <div class="project_hover">
+          <a href="http://www.adamsnotes.net" target="_blank" class="project_link">
+            <span>www.ste.com</span>
+          </a>
+        </div>
+      </div>
+      <figcaption>
+        <p>Информация о проекте</p>
+        <p>1 превью 2 строки</p>
+      </figcaption>
+    </figure>
+
+
+    <figure class="poject">
+      <div class="add-project add-img-after">
+        <div class="add-project-wrap">
+          <a id="open_popup_button" href="#" class="add-text">Добавить проект</a>
+        </div>
+      </div>
+    </figure>
+  </article>
+
+
+  <!-- popup window -->
+  <div class="popup_add" id="popup_template">
+    <!--<div class="popup-title">Добавление проекта</div>-->
+    <div class="popup_add_title">
+      <span>Добавление проекта</span>
+      <a href="#"><span class="popup_add-close sprite close b-close"></span></a>
+    </div>
+    <div class="popup_add-container">
+      <form action="" method="POST" class="popup_add-form" name="popupadd" id="add_project">
+        <label class="popup_add-label">
+          <div class="popup_add-label-title">Название проекта</div>
+          <input type="text" name="add-name" class="popup_add-input-text" placeholder="Введите название">
+        </label>
+        <label class="popup_add-label">
+          <div class="popup_add-label-title">Картинка проекта</div>
+          <div class="popup_add-input-file">
+            <input type="file" name="add-file" class="popup_add-input-file-upload">
+            <div class="popup_add-input-text add_fake">Загрузите изображение</div>
+            <div class="popup_add-upload-icon"><span class="sprite cloud"></span></div>
+          </div>
+        </label>
+        <label class="popup_add-label">
+          <div class="popup_add-label-title">URL проекта</div>
+          <input type="text" name="add-url" class="popup_add-input-text" placeholder="Добавьте ссылку">
+        </label>
+        <label class="popup_add-label">
+          <div class="popup_add-label-title">Описание</div>
+          <textarea class="popup_add-textarea" name="add-text" placeholder="Пара слов о вашем проекте"></textarea>
+        </label>
+        <button class="button-add" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
+  <script src="bower/jquery/dist/jquery.js"></script>
+  <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+  <script src="bower/bPopup/jquery.bpopup.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>
