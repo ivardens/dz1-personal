@@ -40,9 +40,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-jQuery('input, textarea').placeholder();
-// jQuery(document).('input, textarea').placeholder();
-jQuery('input[placeholder], textarea[placeholder]').placeholder();
-// jQuery(document).on('input[placeholder], textarea[placeholder]').placeholder();
-// jQuery(document).('input[placeholder], textarea[placeholder]').placeholder();
+jQuery('input', 'textarea').placeholder();
+jQuery('input[placeholder]', 'textarea[placeholder]').placeholder();
 });

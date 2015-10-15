@@ -178,10 +178,10 @@
   qdisplay: none;
   position: absolute;
   width: 362px;
-  top: 50%;
+  /*top: 50%;
   left:50%;
   margin-left: -181px;
-  margin-top: -370px;
+  margin-top: -370px;*/
   min-height: 378px;
   border-radius: 5px;
   overflow: hidden;
@@ -342,4 +342,18 @@
   box-shadow: inset 0px -2px 0 0 #3ba8c0;
   -webkit-box-shadow: inset 0px -2px 0 0 #3ba8c0;
   -moz-box-shadow: inset 0px -2px 0 0 #3ba8c0;
+}
+.error-mes,
+.success-mes{
+  display: none;
+  padding: 15px 5px 0;
+  background-color: red;
+  opacity: 0.6;
+  height: 30px;
+  border-radius: 5px;
+  color: #FFF;
+  vertical-align: middle;
+}
+.success-mes{
+  background-color: green;
 }

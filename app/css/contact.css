@@ -57,7 +57,7 @@
   margin-left: 15px;
 }
 .label-wrap input, .label-wrap textarea, .label-wrap img, .label-wrap:focus {
-  border: 2px solid #67dffa;
+  border: 1px solid #67dffa;
   border-radius: 5px;
   color: #48cbe8;
   font-size: 13px;
