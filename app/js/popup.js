@@ -11,6 +11,7 @@ var myModule = (function() {
   var _setUpListners = function() {
     $('#open_popup_button').on('click', _showPopup); // Open Popup window
     $('#add_project').on('submit', _addProject); // Add Project
+    $('#fileupload').on('change', _changefileUpload); //добовление файла
   };
 
 // Работает с модальным окном (открывает и закрывает)
@@ -30,6 +31,32 @@ var myModule = (function() {
       }
     });
   };
+
+  //Измененили файл аплоад
+var _changefileUpload = function() {
+  var input = $(this), //инпут type="file"
+      filename = input.val(); //имя загруженного элемент
+      filename = getNameFromPath(filename); //Передаем функции значение input
+
+      // Получаем название файла из пути
+        function getNameFromPath () {
+            return filename.replace(/\\/g, '/').replace(/.*\//, ''); //Получаем название файла из пути
+        }
+
+        //проверка на валидность файла
+        // function isImg (filename) {
+        //   var validFile = /\.(jpeg|jpg|png|gif)$/i.test(filename);
+        //   return validFile;
+        // }
+
+
+    // console.log(filename);
+  $('#filename')
+    .val(filename)
+    .trigger('hideTooltip')
+    .removeClass('error');
+
+};
 
 // Добавляет проект
   var _addProject = function(event) {

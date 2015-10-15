@@ -9,15 +9,15 @@ var validation = (function() {
   var _setUpListners = function() {
     // events
     $('form').on('keydown', '.has-error', _removeError);
-    // $('form').on('change', '.popup_add-input-file-upload', _removeError);
-    $('form').on('reset', _clearForm);
+    // $('form').on('change', '.popup_add-input-text', _removeError);
+    // $('form').on('reset', _clearForm);
   };
   var _removeError = function(){
     $(this).removeClass('has-error');
   };
   var _clearForm = function(form){
     var form = $(this);
-    form.find('input, textarea, .add_fake').trigger('hideTooltip');
+    form.find('.input, textarea, .popup_add-input-text').trigger('hideTooltip');
     form.find('.has-error').removeClass('has-error');
   };
   // Create Tooltip
@@ -66,7 +66,7 @@ var validation = (function() {
   var validateForm = function(form) {
     console.log('This is validateForm function');
     // var elements = form.find('input, textarea, div.add_fake'),
-    var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
+    var elements = form.find('input, textarea').not('input[type="hidden"]'),
       valid = true;
 
     // Пройдём по всем элементам формы
