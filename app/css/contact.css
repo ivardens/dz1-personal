@@ -135,5 +135,26 @@
 .form-button-clear {
   float: right;
 }
+.placeholder{
+  color: #48cbe8;
+}
+::-webkit-input-placeholder {
+  color: #48cbe8;
+  vertical-align: middle;
+}
 
+::-moz-placeholder {
+  color: #48cbe8;
+  vertical-align: middle;
+}
+
+::-moz-placeholder {
+  color: #48cbe8;
+  vertical-align: middle;
+}
+
+:-ms-input-placeholder {
+  color: #48cbe8;
+  vertical-align: middle;
+}
 /* Form block end */

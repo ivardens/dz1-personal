@@ -42,4 +42,5 @@ $(document).ready(function(){
 $(document).ready(function(){
 jQuery('input', 'textarea').placeholder();
 jQuery('input[placeholder]', 'textarea[placeholder]').placeholder();
+$('input, textarea').placeholder({ customClass: 'my-placeholder' });
 });
