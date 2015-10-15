@@ -9,15 +9,14 @@ var validation = (function() {
   var _setUpListners = function() {
     // events
     $('form').on('keydown', '.has-error', _removeError);
-    // $('form').on('change', '.popup_add-input-text', _removeError);
-    // $('form').on('reset', _clearForm);
+    $('form').on('reset', _clearForm);
   };
   var _removeError = function(){
     $(this).removeClass('has-error');
   };
   var _clearForm = function(form){
     var form = $(this);
-    form.find('.input, textarea, .popup_add-input-text').trigger('hideTooltip');
+    form.find('input, textarea').trigger('hideTooltip');
     form.find('.has-error').removeClass('has-error');
   };
   // Create Tooltip
