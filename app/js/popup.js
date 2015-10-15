@@ -11,6 +11,7 @@ var myModule = (function() {
   var _setUpListners = function() {
     $('#open_popup_button').on('click', _showPopup); // Open Popup window
     $('#add_project').on('submit', _addProject); // Add Project
+    $('#login-form').on('submit', _addProject);
     $('#fileupload').on('change', _changefileUpload); //добовление файла
   };
 
@@ -20,8 +21,9 @@ var myModule = (function() {
     var newPopup = $('#popup_window'),
         form = newPopup.find('.popup_add-form');
     newPopup.bPopup({
-      fadeSpeed: 'slow', //can be a string ('slow'/'fast') or int
-      followSpeed: 'fast', //can be a string ('slow'/'fast') or int
+      // fadeSpeed: 'slow', //can be a string ('slow'/'fast') or int
+      // followSpeed: 'fast', //can be a string ('slow'/'fast') or int
+      speed: 350,
       opacity: 0.8,
       modalColor: '#005398',
       transition: 'slideDown',

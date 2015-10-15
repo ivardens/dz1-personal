@@ -452,7 +452,7 @@
     background-color: #fdd5d2 !important;
     border: 1px solid red !important;
   }
-  .qtip-default{
+  /*.qtip-default{
   	border: 1px solid #f97e76 !important;
 
   	background-color: #f97e76 !important;
@@ -461,4 +461,30 @@
 
   	.qtip-default .qtip-titlebar{
   		background-color: #f97e76 !important;
-  	}
+  	}*/
+    .qtip-mystyle {
+      background: #f97e76;
+      display: none;
+      color: #fff;
+      font-size: 13px;
+      border: #f97e76 2px solid;
+      border-width: 1px;
+      border-style: solid;
+      border-color:  #f97e76;
+    }
+
+    .qtip-content {
+       position: relative;
+       padding: 5px 8px;
+       overflow: hidden;
+       text-align: left;
+       word-wrap: break-word;
+    }
+
+    .error {
+      background: #fad2d1 !important;
+      /*border: 1px solid #f97e76 !important;*/
+      border-width: 1px !important;
+      border-style: solid !important;
+      border-color:  #f97e76 !important;
+    }
