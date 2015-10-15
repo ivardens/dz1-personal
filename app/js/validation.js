@@ -66,7 +66,7 @@ var validation = (function() {
   var validateForm = function(form) {
     console.log('This is validateForm function');
     // var elements = form.find('input, textarea, div.add_fake'),
-    var elements = form.find('input, textarea').not('input[type="hidden"]'),
+    var elements = form.find('input, textarea'),
       valid = true;
 
     // Пройдём по всем элементам формы

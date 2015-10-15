@@ -43,18 +43,11 @@ var _changefileUpload = function() {
             return filename.replace(/\\/g, '/').replace(/.*\//, ''); //Получаем название файла из пути
         }
 
-        //проверка на валидность файла
-        // function isImg (filename) {
-        //   var validFile = /\.(jpeg|jpg|png|gif)$/i.test(filename);
-        //   return validFile;
-        // }
-
-
     // console.log(filename);
   $('#filename')
     .val(filename)
     .trigger('hideTooltip')
-    .removeClass('error');
+    .removeClass('has-error');
 
 };
 
