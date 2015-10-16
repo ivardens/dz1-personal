@@ -23,7 +23,7 @@ var myModule = (function() {
     newPopup.bPopup({
       // fadeSpeed: 'slow', //can be a string ('slow'/'fast') or int
       // followSpeed: 'fast', //can be a string ('slow'/'fast') or int
-      speed: 350,
+      speed: 300,
       opacity: 0.8,
       modalColor: '#005398',
       transition: 'slideDown',
