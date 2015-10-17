@@ -3,27 +3,27 @@
 // gulp.task('default', function() {
 //   // place code for your default task here
 // });
+// var gulp = require('gulp'),
+// 	browserSync = require('browser-sync');
+// 
+// gulp.task('server', function (){
+// 	browserSync({
+// 			proxy: "dz1.com"
+// 
+// 	});
+// });
+
 var gulp = require('gulp'),
 	browserSync = require('browser-sync');
 
 gulp.task('server', function (){
 	browserSync({
-			proxy: "dz1.com"
-
+		port: 9000,
+		server: {
+			baseDir: 'app'
+		}
 	});
 });
-
-// var gulp = require('gulp'),
-// 	browserSync = require('browser-sync');
-//
-// gulp.task('server', function (){
-// 	browserSync({
-// 		port: 9000,
-// 		server: {
-// 			baseDir: 'app'
-// 		}
-// 	});
-// });
 
 gulp.task('watch', function (){
 	gulp.watch([
