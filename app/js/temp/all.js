@@ -1,6 +1,3 @@
-<<<<<<< 6e5504205b6e1c00af5c752101287630f0d93d2e
-
-=======
 var myModule = (function () {
 
   // Opens methods
@@ -260,4 +257,3 @@ $(document).ready(function () {
   jQuery('input, textarea').placeholder();
 
 });
->>>>>>> fixed errors 3

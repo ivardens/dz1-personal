@@ -45,8 +45,8 @@
   display: block;
   outline: none;
   margin: 24px 0 22px 0;
-  padding: 0 0 0 20px;
-  min-height: 58px;
+  padding: 20px 10px 20px 20px;
+  /*min-height: 58px;*/
   min-width: 400px;
   border-radius: 5px;
   color: #48cbe8;
