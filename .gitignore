@@ -8,3 +8,4 @@ app/access.log
 app/.htaccess
 app/error_log
 
+.DS_Store

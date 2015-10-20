@@ -1,37 +1,39 @@
-// Объявление модуля
-var adminMe = (function () {
+function placeholder(form) {
+  form.wrapInner('');
+  var form = $(form);
+  form.find('input[placeholder]').each(function(index, current) {
+    var $current = $(current),
+        $placeholder = $('');
+        $placeholder.insertAfter($current);
+        $current.removeAttr('placeholder');
 
-	// Инициализирует наш модуль
-	var init = function () {
-		_setUpListners();
-	};
+    $placeholder.click(function() {
+      $current.focus()
+    });
+    $current.keypress(function() {
+      if ($(this).val().length > 0) {
+        $placeholder.hide();
+        var $current2 = $current.removeAttr('value');
+        //var $current3 = form.find('#label_pass').('input["value"]').removeAttr('value');
 
-	// Прослушивает события
-	var _setUpListners = function () {
-		$('#login-form').on('submit', _submitForm);
-	};
-
-		var _submitForm = function (ev) {
-			ev.preventDefault();
-
-
-      //объявляем переменные
-			var form = $(this),
-				url = 'login.php',
-				defObj =  _ajaxForm(form, url);
-				// что-то будем делатть с ответом с сервера defObj
-		};
-
-	  var _ajaxForm = function (form, url) {
-	  	if (!validation.validateForm(form)) return false;
-	  	// если false то код ниже не произойдет никогда
-
-	  };
+      }
+    });
+    $current.blur(function() {
+      if ($(this).val().length == 0) {
+        $placeholder.show();
+      } else {
+        $placeholder.hide();
+      }
+    });
+  });
+}
 
 
-	// Возвращаем объект (публичные методы)
-	return {
-		init: init
-	};
+// Input file name in the form file
 
-})();
+$(document).ready(function() {
+
+  // jQuary placeholder view for all browsers
+  $('input, textarea').placeholder();
+  placeholder($("#login-form"));
+});

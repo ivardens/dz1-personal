@@ -1,14 +1,14 @@
-var myModule = (function () {
+var myModule = (function() {
 
   // Opens methods
   // Инициализирует наш модуль
-  var init = function () {
+  var init = function() {
     _setUpListners();
   };
 
   // Hiden methods
   // Прослушивает события
-  var _setUpListners = function () {
+  var _setUpListners = function() {
     $('#open_popup_button').on('click', _showPopup); // Open Popup window
     $('#add_project').on('submit', _addProject); // Add Project
     $('#fileupload').on('change', _changefileUpload); //добовление файла
@@ -38,7 +38,7 @@ var myModule = (function () {
 
 
   //Измененили файл аплоад
-  var _changefileUpload = function () {
+  var _changefileUpload = function() {
     var input = $(this), //инпут type="file"
       filename = input.val(); //имя загруженного элемент
     filename = getNameFromPath(filename); //Передаем функции значение input
@@ -58,17 +58,17 @@ var myModule = (function () {
 
 
   // Contact me and login form
-  var _submitForm = function(event){
+  var _submitForm = function(event) {
     // console.log('The submitForm отправка формы function');
     event.preventDefault();
 
     var form = $(this),
-        url = 'contactme.php',
-        defObj = _ajaxForm(form, url);
-        // дальше будем работать с ответом с сервера defObj
+      url = 'contactme.php',
+      defObj = _ajaxForm(form, url);
+    // дальше будем работать с ответом с сервера defObj
   };
 
-  var _ajaxForm = function(form, url){
+  var _ajaxForm = function(form, url) {
     // console.log('The ajaxForm запрос с проверкой!');
     if (!validation.validateForm(form)) return false;
     // если false то код ниже не сработает никогда
@@ -144,15 +144,15 @@ var validation = (function() {
   // Hiden methods
   var _setUpListners = function() {
     // events
-    $('form').on('keydown', '.has-error', _removeError);
+    $('form').on('keydown', '.has-error, #login-pass', _removeError);
     $('form').on('reset', _clearForm);
 
   };
-  var _removeError = function(){
+  var _removeError = function() {
     $(this).removeClass('has-error');
-    $(this).removeAttr('placeholder');
+    $(window).resize();
   };
-  var _clearForm = function(form){
+  var _clearForm = function(form) {
     var form = $(this);
     form.find('input, textarea').trigger('hideTooltip');
     form.find('.has-error').removeClass('has-error');
@@ -202,7 +202,8 @@ var validation = (function() {
   // Universal function for check form
   var validateForm = function(form) {
     //console.log("This is validateForm function");
-    var elements = form.find('input, textarea'), valid = true;
+    var elements = form.find('input, textarea'),
+      valid = true;
 
     // Пройдём по всем элементам формы
     $.each(elements, function(index, val) {
@@ -235,12 +236,42 @@ validation.init();
 
 // validation END
 
+// function placeholder(form) {
+//   form.wrapInner('');
+//   var form = $(form);
+//   form.find('input[placeholder]').each(function(index, current) {
+//     var $current = $(current),
+//         $placeholder = $current.attr("'placeholder:' + $current.attr");
+//         $placeholder.insertAfter($current);
+//         $current.removeAttr('placeholder');
+//
+//     $placeholder.click(function() {
+//       $current.focus()
+//     });
+//     $current.keypress(function() {
+//       if ($(this).val().length > 0) {
+//         $placeholder.hide();
+//         //var $current2 = $current.removeAttr('value');
+//         //var $current3 = form.find('#label_pass').('input["value"]').removeAttr('value');
+//
+//       }
+//     });
+//     $current.blur(function() {
+//       if ($(this).val().length == 0) {
+//         $placeholder.show();
+//       } else {
+//         $placeholder.hide();
+//       }
+//     });
+//   });
+// }
+
 
 // Input file name in the form file
 
-$(document).ready(function () {
+$(document).ready(function() {
 
-  $(document).on('change', '.popup_add-input-file-upload', function () {
+  $(document).on('change', '.popup_add-input-file-upload', function() {
 
     // по событию change инпут файла
     var
@@ -258,4 +289,5 @@ $(document).ready(function () {
 
   // jQuary placeholder view for all browsers
   $('input, textarea').placeholder();
+  //placeholder($("#login-form"));
 });
