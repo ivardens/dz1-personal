@@ -2,6 +2,7 @@ app/bower
 node_modules
 dist
 .idea
+.DS_Store
 app/temp
 app/access.log
 app/.htaccess
