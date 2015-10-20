@@ -12,7 +12,8 @@ var myModule = (function () {
     $('#open_popup_button').on('click', _showPopup); // Open Popup window
     $('#add_project').on('submit', _addProject); // Add Project
     $('#fileupload').on('change', _changefileUpload); //добовление файла
-    $('#login-form').on('submit', _addProject);
+    //$('#login-form').on('submit', _addProject);
+    $('#login-form').on('submit', _submitForm);
     $('#contact-me').on('submit', _submitForm);
   };
 
@@ -145,9 +146,11 @@ var validation = (function() {
     // events
     $('form').on('keydown', '.has-error', _removeError);
     $('form').on('reset', _clearForm);
+
   };
   var _removeError = function(){
     $(this).removeClass('has-error');
+    $(this).removeAttr('placeholder');
   };
   var _clearForm = function(form){
     var form = $(this);
@@ -233,7 +236,7 @@ validation.init();
 // validation END
 
 
-// Input file name in theform file
+// Input file name in the form file
 
 $(document).ready(function () {
 
@@ -254,6 +257,5 @@ $(document).ready(function () {
   });
 
   // jQuary placeholder view for all browsers
-  jQuery('input, textarea').placeholder();
-
+  $('input, textarea').placeholder();
 });
