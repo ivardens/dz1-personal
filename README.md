@@ -58,3 +58,12 @@ npm install --save-dev gulp
 Add project to the Git:
 git remote add origin https://github.com/you-login/name-project.git
 git push -u origin master
+
+
+Node.js was installed at
+   /usr/local/bin/node
+npm was installed at
+   /usr/local/bin/npm
+Make sure that /usr/local/bin is in your $PATH.
+
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/usr/local/bin/npm

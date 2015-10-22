@@ -1,8 +1,25 @@
 {
-  "name": "dz1-light_varden",
-  "devDependencies": {
-    "browser-sync": "^2.9.11",
+  "name": "dz1-light",
+  "version": "1.0.0",
+  "description": "> How install me project",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.9.6",
     "gulp": "^3.9.0",
-    "gulp-connect-php": "0.0.5"
-  }
+    "gulp-connect-php": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivarden/varden-dz1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivarden/varden-dz1/issues"
+  },
+  "homepage": "https://github.com/ivarden/varden-dz1#readme"
 }

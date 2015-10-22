@@ -33,6 +33,8 @@ gulp.task('watch', function (){
 	]).on('change', browserSync.reload);
 });
 
+gulp.task('default', ['server', 'watch']);
+
 
 // Gulp watch Sass
 //
@@ -57,7 +59,7 @@ gulp.task('watch', function (){
 //
 // Gulp watch Sass
 
-gulp.task('default', ['server', 'watch']);
+
 
 // gulp.task('hello', function() {
 //   console.log('Hello Varden! You are happy?');
