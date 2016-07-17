@@ -1,3 +1,4 @@
+Version for testing : http://adams-notes.com/OLD/dz1/
 > How install me project 
 
 1. git clone __git.url.__ site (input real URL)
